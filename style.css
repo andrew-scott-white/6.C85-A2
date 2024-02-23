@@ -3,4 +3,29 @@ body {
     and use the OS’s UI font as the website font
   */
  font: 100%/1.5 system-ui;
+ 
+ body {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* mother-container */
+  div#mother {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+  
+  /* main-container */
+  #container-bild {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* picture in main-container */
+  #img-bild {
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #280198;
+  }
 }
