@@ -51,17 +51,10 @@
 			brief review of data quality. The first thing I discovered was that
 			some municipalities are duplicated in the dataset. For such
 			municipalities, the data on areas zoned for single-family housing is
-			recorded separately and notated by a <label for="only_single_housing"></label>
-			flag. 
-
-			After filtering out the separate single-family data, I began by
-			looking at the percentage of residential land zoned for
-			single-family housing in each municipality, as shown in Figure 1. My
-			first takeaway is that many municipalities still employ extensive
-			single-family zoning — 48 municipalities zone the majority of
-			residential land for single-families, marked by those above the
-			dashed line. Next, I noticed the group of municipalities with zero
-			single-family zoning. 
+			recorded separately and notated by a <label
+			for="only_single_housing"></label>
+			flag. These single-family-only datasets were filtered out; the
+			analysis to follow focuses on whole municipalities. 
 
 			<figure>
 				<img src="../images/SF-percentage_bar.png" alt="bar chart showing the percentage of single-family zoning in each municipality" width="100%" height="auto"/>
@@ -71,29 +64,23 @@
 				Metropolitian Area municipality listed on the horizontal axis.
 				The dashed line indicates 50% single-family zoning, highlighting
 				the 48 municipalities that zone the majority of their
-				residential land for single-family housing.
+				residential land for single-family housing. Of note, there are
+				many municipalities that have zero single-family zoning as well.
 				</figcaption>
-			</figure>
-
-			I plotted the same data on a map, as shown in Figure 2, to look for
-			any spatial trends. I plotted with three color bins to highlight
-			regions with low, moderate, and high percentages of single-family
-			zoning. The first feature I notice is the ring of red, which in 1960
-			the Boston Globe dubbed as the "Executive Belt". This ring of
-			affluent communities maintained their status through the use of
-			exclusionary zoning techniques. In following figures, we will
-			further address the first two analysis questions with these in mind.  			
+			</figure>		
 
 			<figure>
 				<img src="../images/SF-percentage_map.png" alt="single family housing percentage of different municipalities" width="100%" height="auto"/>
 				<figcaption>
 				The percentage of residential area zoned for single-family
-				housing is shown in three colors indicating low (pink), moderate
-				(orange), and high (red) percentages. Assessing this data in a
-				map highlights the "Executive Belt", where municipalities
-				extensively zoned for estates. These municipalities used
-				exclusionary zoning techniques to encourage and maintain
-				affluent and predominantly white communities.
+				housing is shown in three colors indicating low (pink),
+				moderate (orange), and high (red) percentages. Assessing this
+				data in a map highlights spatial effects including the
+				"Executive Belt", dubbed by the Boston Globe in 1960, where
+				municipalities extensively zoned for single-family estates.
+				These municipalities used exclusionary zoning techniques to
+				encourage and maintain affluent and predominantly white
+				communities.
 				</figcaption>
 			</figure>
 
@@ -118,16 +105,24 @@
 			<figure>
 				<img src="../images/SF-percentage-belt_map.png" alt="map of single-family housing percentage of different municipalities described as part of the executive belt." width="100%" height="auto"/>
 				<figcaption>
-					The percentage of residential area zoned for single-family
-					housing is shown in three colors indicating low (pink),
-					moderate (orange), and high (red) percentages. The
-					municipalities shown in this map are those explicitly
+					To address my first analysis question, the percentage of
+					residential area zoned for single-family housing is again
+					shown in three colors indicating low (pink), moderate
+					(orange), and high (red) percentages. The municipalities
+					shown are those <em>explicitly</em>
 					mentioned as part of the "Executive Belt" of estates by Amy
 					Dain in her <em>Exclusionary by Design</em> report. I was
 					surpised to see that four of these municipalities have zero
 					single-family zoning, so I undertook a brief verification
 					search. I found that the Wayland data is incorrect, and they
-					are almost completely zoned for single-family housing. 
+					are almost completely zoned for single-family housing, as
+					shown in this <a
+					href="https://www.wayland.ma.us/sites/g/files/vyhlif9231/f/uploads/zoning_color_5.pdf">
+					district map</a>. This result brings into question the
+					validity of the Warren Group dataset. Future work should be
+					done to validate the single-family housing percentages,
+					particularly for the "Executive Belt" municipalities shown
+					here. 
 				</figcaption>
 			</figure>
 		
